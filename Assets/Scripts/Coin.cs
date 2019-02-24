@@ -6,7 +6,7 @@ public class Coin : Collectable {
 
 	// Use this for initialization
 	void Start() {
-		
+        itemName = "Coin";
 	}
 	
 	// Update is called once per frame
@@ -14,8 +14,16 @@ public class Coin : Collectable {
 		
 	}
 
-    protected override void OnCollect() {
-        base.OnCollect();
+    public override void OnUse() {
+        base.OnUse();
+
+        
+    }
+
+    protected override void OnCollectBy(GameObject other) {
+        base.OnCollectBy(other);
+
+        
     }
 
 }
