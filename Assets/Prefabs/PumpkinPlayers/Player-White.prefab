@@ -25,9 +25,10 @@ GameObject:
   - component: {fileID: 120289306461834474}
   - component: {fileID: 114647943121733714}
   - component: {fileID: 136190395620262252}
+  - component: {fileID: 114472003721875048}
   m_Layer: 0
   m_Name: Player-White
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +39,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1369607302166460}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.87, y: 0.5, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -100,6 +101,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1, y: 3.1, z: 3.1}
   m_Center: {x: 0.100000024, y: 1.5, z: 0}
+--- !u!114 &114472003721875048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1369607302166460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d624f9cf69936bb47ae48090db4f6ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdAmount: 0
+  _playerDataUI: {fileID: 0}
+  items: []
+  useItemKey: 0
 --- !u!114 &114647943121733714
 MonoBehaviour:
   m_ObjectHideFlags: 1
