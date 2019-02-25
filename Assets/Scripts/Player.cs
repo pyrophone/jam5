@@ -7,6 +7,10 @@ public class Player : MonoBehaviour {
 	KeyCode moveForward;
 	[SerializeField]
 	KeyCode moveBack;
+	[SerializeField]
+	KeyCode moveRight;
+	[SerializeField]
+	KeyCode moveLeft;
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +22,17 @@ public class Player : MonoBehaviour {
 		if(Input.GetKey(moveForward)) {
 			transform.position += transform.forward * Time.deltaTime;
 		}
+
 		if(Input.GetKey(moveBack)) {
 			transform.position -= transform.forward * Time.deltaTime;
+		}
+
+		if(Input.GetKey(moveRight)) {
+			transform.position += transform.right * Time.deltaTime;
+		}
+
+		if(Input.GetKey(moveLeft)) {
+			transform.position -= transform.right * Time.deltaTime;
 		}
 	}
 }
