@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65503662734665958}
   - component: {fileID: 120502828085581954}
   - component: {fileID: 114077185157501740}
+  - component: {fileID: 136870074926498096}
   m_Layer: 0
   m_Name: Player-Red
   m_TagString: Untagged
@@ -95,10 +96,10 @@ BoxCollider:
   m_GameObject: {fileID: 1997642402361572}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.1, y: 3.1, z: 3.1}
+  m_Center: {x: 0.100000024, y: 1.5, z: 0}
 --- !u!114 &114077185157501740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,3 +204,16 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!136 &136870074926498096
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997642402361572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.466341
+  m_Height: 2.860912
+  m_Direction: 1
+  m_Center: {x: 0.13142401, y: 1.430456, z: 0.0090789795}
