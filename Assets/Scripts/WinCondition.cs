@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class WinCondition : MonoBehaviour {
 	public GameObject[] players;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	public void Win(){
 		GameObject winPlayer = players[0];
