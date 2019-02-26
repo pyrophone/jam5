@@ -20,16 +20,28 @@ public class SimpleButton : MonoBehaviour {
 
     private void OnPlayerStepOn() {
 		curCount++;
-		if(curCount > playersNeeded) {
+		if(curCount >= playersNeeded) {
 			bindWall.SetActive(false);
 			gameObject.SetActive(false);
 		}
     }
 
-    private void OnCollisionEnter(Collision other) {
+    private void OnPlayerStepOff()
+    {
+        curCount--;
+    }
+
+    private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Player") {
             OnPlayerStepOn();
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            OnPlayerStepOff();
+        }
+    }
 }
