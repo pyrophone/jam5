@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SimpleExit : MonoBehaviour {
-
+    
+    
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +15,11 @@ public class SimpleExit : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.tag == "Player") {
+            
+        }
+    }
+
 }
