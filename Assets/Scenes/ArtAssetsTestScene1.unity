@@ -498,12 +498,12 @@ Prefab:
         type: 2}
       propertyPath: players.Array.data[0]
       value: 
-      objectReference: {fileID: 888486305}
+      objectReference: {fileID: 463055371}
     - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
         type: 2}
       propertyPath: players.Array.data[1]
       value: 
-      objectReference: {fileID: 463055371}
+      objectReference: {fileID: 888486305}
     - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
         type: 2}
       propertyPath: players.Array.data[2]
@@ -514,6 +514,36 @@ Prefab:
       propertyPath: players.Array.data[3]
       value: 
       objectReference: {fileID: 1931455334}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d4f446050c81f04fac27384b1d61a10, type: 2}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6d63d06b5bde434aa96934e33e9f579, type: 2}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0cbcf686f1f816d4b870fffeb894df16, type: 2}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3addad437e01ecf43b1cee0de593734f, type: 2}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa89f276000ac554289ce0c719d5aa07, type: 2}
+    - target: {fileID: 114280537168460616, guid: cf724af8592484b0da68b622c2c9b998,
+        type: 2}
+      propertyPath: mats.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 346bc9884bd8c7543ad4b0f79fad3fcf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf724af8592484b0da68b622c2c9b998, type: 2}
   m_IsPrefabAsset: 0
@@ -615,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 384179162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 16}
-  m_LocalScale: {x: 1, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 9, z: 10}
   m_Children: []
   m_Father: {fileID: 1869576828}
   m_RootOrder: 5
@@ -626,7 +656,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 384179162}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 425ecd3fd42db4dacb08fbb2d8de4442, type: 3}
   m_Name: 
@@ -1592,7 +1622,7 @@ Transform:
   m_GameObject: {fileID: 1092752409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 1.5}
-  m_LocalScale: {x: 1, y: 10, z: 20}
+  m_LocalScale: {x: 1, y: 9, z: 20}
   m_Children: []
   m_Father: {fileID: 1869576828}
   m_RootOrder: 4
@@ -1835,7 +1865,7 @@ GameObject:
   - component: {fileID: 1260619283}
   m_Layer: 9
   m_Name: Barrier5
-  m_TagString: Untagged
+  m_TagString: MazeWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1848,7 +1878,7 @@ Transform:
   m_GameObject: {fileID: 1260619281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -20, y: 5, z: 36.5}
-  m_LocalScale: {x: 1, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 9, z: 10}
   m_Children: []
   m_Father: {fileID: 1869576828}
   m_RootOrder: 8
@@ -1859,7 +1889,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260619281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 425ecd3fd42db4dacb08fbb2d8de4442, type: 3}
   m_Name: 
@@ -2364,6 +2394,15 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: a1f0af0dafa69e94382d2feebcf5caca, type: 2}
+    - target: {fileID: 1369607302166460, guid: e472a86b20305a141986e338070ca6d8, type: 2}
+      propertyPath: m_Name
+      value: Player-Grey
+      objectReference: {fileID: 0}
+    - target: {fileID: 23378330507296722, guid: e472a86b20305a141986e338070ca6d8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d973bebaf5c10a4494c32f0699aa7a2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e472a86b20305a141986e338070ca6d8, type: 2}
   m_IsPrefabAsset: 0
@@ -2453,7 +2492,7 @@ GameObject:
   - component: {fileID: 1654488627}
   m_Layer: 9
   m_Name: Barrier4
-  m_TagString: Untagged
+  m_TagString: MazeWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2466,7 +2505,7 @@ Transform:
   m_GameObject: {fileID: 1654488625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 36.5}
-  m_LocalScale: {x: 1, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 9, z: 10}
   m_Children: []
   m_Father: {fileID: 1869576828}
   m_RootOrder: 7
@@ -2477,7 +2516,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654488625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 425ecd3fd42db4dacb08fbb2d8de4442, type: 3}
   m_Name: 
@@ -2550,7 +2589,7 @@ GameObject:
   - component: {fileID: 1673228896}
   m_Layer: 9
   m_Name: Barrier3
-  m_TagString: Untagged
+  m_TagString: MazeWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2563,7 +2602,7 @@ Transform:
   m_GameObject: {fileID: 1673228894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15, y: 5, z: 16}
-  m_LocalScale: {x: 1, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 9, z: 10}
   m_Children: []
   m_Father: {fileID: 1869576828}
   m_RootOrder: 6
@@ -2574,7 +2613,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1673228894}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 425ecd3fd42db4dacb08fbb2d8de4442, type: 3}
   m_Name: 
@@ -2664,6 +2703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1869576828}
+  - component: {fileID: 1869576829}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -2706,6 +2746,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869576829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869576827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf926e3b943cef419acd5deabe25530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallMaterial:
+  - {fileID: 2100000, guid: 2d4f446050c81f04fac27384b1d61a10, type: 2}
+  - {fileID: 2100000, guid: e6d63d06b5bde434aa96934e33e9f579, type: 2}
+  - {fileID: 2100000, guid: 3addad437e01ecf43b1cee0de593734f, type: 2}
+  - {fileID: 2100000, guid: 0cbcf686f1f816d4b870fffeb894df16, type: 2}
+  - {fileID: 2100000, guid: aa89f276000ac554289ce0c719d5aa07, type: 2}
+  - {fileID: 2100000, guid: 346bc9884bd8c7543ad4b0f79fad3fcf, type: 2}
 --- !u!1 &1884693550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,11 +3056,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4542948919789810, guid: 37076157edcce42d683264238769be63, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1224175244683122, guid: 37076157edcce42d683264238769be63, type: 2}
       propertyPath: m_Name
       value: Barrier6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224175244683122, guid: 37076157edcce42d683264238769be63, type: 2}
+      propertyPath: m_TagString
+      value: MazeWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022554817395082, guid: 37076157edcce42d683264238769be63,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37076157edcce42d683264238769be63, type: 2}
