@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 	private GameObject[] players;
 	[SerializeField]
 	private Material[] mats;
+	[SerializeField]
+	private float radius = 5.0f;
 
 	// Use this for initialization
 	void Start()
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
 
 	public void SwapTethers(GameObject player)
 	{
-		float closest = 6.0f;
+		float closest = radius + 1.0f;
 		int tetherNum = -1;
 		int thisNum = -1;
 		int counter = 0;
@@ -40,7 +42,7 @@ public class GameManager : MonoBehaviour
 
 			float l = Vector3.Distance(player.transform.position, players[i].transform.position);
 
-			if (l < 2.5f && l < closest) {
+			if (l < radius && l < closest) {
 				closest = l;
 				tetherNum = i;
 			}

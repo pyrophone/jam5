@@ -15,8 +15,8 @@ public class Flood : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        
-	}
+        _isMoving = true;
+    }
 	
 	// Update is called once per frame
 	void Update() {

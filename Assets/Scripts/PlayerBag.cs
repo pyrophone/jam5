@@ -2,14 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBag : MonoBehaviour {
 
     public int holdAmount;
+    [SerializeField] private GameObject _playerDataUI;
 
     public List<Collectable> items;
 
-    [SerializeField] KeyCode useItemKey;
+    [SerializeField] private KeyCode useItemKey;
 
     // Use this for initialization
     void Start () {
@@ -26,6 +28,8 @@ public class PlayerBag : MonoBehaviour {
     public void AddToBag(Collectable item) {
         items.Add(item);
         holdAmount++;
+
+        SetCoinIndicator(holdAmount);
     }
 
     public void UseItem(string name) {
@@ -39,6 +43,10 @@ public class PlayerBag : MonoBehaviour {
 
         Debug.Log("Nothing can be used!!!");
         return;
+    }
+
+    private void SetCoinIndicator(int amount) {
+        _playerDataUI.transform.Find("CoinIndicator").GetComponent<Text>().text = "" + amount;
     }
 
 }

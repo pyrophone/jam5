@@ -29,6 +29,7 @@ public class Collectable : MonoBehaviour {
     protected virtual void OnCollectBy(GameObject other) {
         _isCollected = true;
 
+        Debug.Log(itemName + " is collect by " + other.name + "!");
         other.GetComponent<PlayerBag>().AddToBag(this);
         gameObject.SetActive(false);
     }
