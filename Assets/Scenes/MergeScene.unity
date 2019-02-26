@@ -2342,6 +2342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bindWall: {fileID: 401858083}
+  playersNeeded: 2
 --- !u!1 &1565805815
 GameObject:
   m_ObjectHideFlags: 0
