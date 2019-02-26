@@ -50,7 +50,8 @@ public class PlayerBag : MonoBehaviour {
     }
 
     public void SetWin(){
-        _playerDataUI.transform.Find("CoinIndicator").GetComponent<Text>().text = "" + holdAmount + "\nWin";
+        //_playerDataUI.transform.Find("CoinIndicator").GetComponent<Text>().text = "" + holdAmount + "\nWin";
+        GameObject.Find("Win").GetComponent<Text>().text = name + "\nWins";
     }
 
 }
