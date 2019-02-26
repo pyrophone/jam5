@@ -12,6 +12,8 @@ public class Player : MonoBehaviour {
 	[SerializeField]
 	KeyCode moveLeft;
 
+	float speed = 10.0f;
+
 	// Use this for initialization
 	void Start () {
 
@@ -20,19 +22,19 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKey(moveForward)) {
-			transform.position += transform.forward * Time.deltaTime;
+			transform.position += transform.forward * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveBack)) {
-			transform.position -= transform.forward * Time.deltaTime;
+			transform.position -= transform.forward * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveRight)) {
-			transform.position += transform.right * Time.deltaTime;
+			transform.position += transform.right * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveLeft)) {
-			transform.position -= transform.right * Time.deltaTime;
+			transform.position -= transform.right * Time.deltaTime * speed;
 		}
 	}
 }

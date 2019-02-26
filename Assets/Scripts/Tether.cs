@@ -42,4 +42,8 @@ public class Tether : MonoBehaviour
 		tetheredTo = go;
 		lr.material = mat;
 	}
+
+	public GameObject GetTetherTo(){
+		return tetheredTo;
+	}
 }
