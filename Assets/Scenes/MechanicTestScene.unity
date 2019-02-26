@@ -2967,6 +2967,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114014516646562548, guid: 84cb1cd41b8be9b46acd561bde824d1c,
+        type: 2}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1911047433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cb1cd41b8be9b46acd561bde824d1c, type: 2}
   m_IsPrefabAsset: 0
@@ -3322,6 +3327,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844152002}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1911047433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114544410908694930, guid: d523745dc85daa34cb592ae278088e32,
+    type: 2}
+  m_PrefabInternal: {fileID: 1679644575}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1925080151
 GameObject:
   m_ObjectHideFlags: 0

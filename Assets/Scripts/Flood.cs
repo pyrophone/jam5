@@ -1,21 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Flood : MonoBehaviour {
     
     public float playerSpeedRefactor;
 
-    [SerializeField] private float _floodTime;
+    [SerializeField] private int _floodTime;
 
     [SerializeField] private Transform _startPoint;
     [SerializeField] private Transform _endPoint;
+
+    [SerializeField] private Text timerText;
 
     private bool _isMoving;
 
     // Use this for initialization
     void Start() {
         _isMoving = true;
+        countDownTime = _floodTime;
+        timerText.text = "" + _floodTime;
+
+        StartCoroutine("CountDown");
     }
 	
 	// Update is called once per frame
@@ -42,6 +49,13 @@ public class Flood : MonoBehaviour {
         
     }
 
-
+    private int countDownTime;
+    private IEnumerator CountDown() {
+        while (countDownTime >= 0) {
+            timerText.text = "" + countDownTime;
+            countDownTime--;
+            yield return new WaitForSeconds(1);
+        }
+    }
 
 }
