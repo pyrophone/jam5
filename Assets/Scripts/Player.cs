@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 	Rigidbody rb;
 	Vector3 moveDir;
 
-	float speed = 10.0f;
+	public float speed = 10.0f;
 
 	// Use this for initialization
 	void Start () {
