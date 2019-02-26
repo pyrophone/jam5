@@ -19,6 +19,22 @@ public class PlayerCollision : MonoBehaviour {
 				Destroy(collision.gameObject);
 			}	
 		}
+
+		if (collision.gameObject.tag == "FinalButton"){
+			Debug.Log("Hit final button");
+			//GameObject.FindObjectOfType(typeof(ScriptA)) as ScriptA
+			//DoorManager doorManager = gameObject.GetComponent<DoorManager>();
+			DoorManager doorManager = GameObject.FindObjectOfType(typeof(DoorManager)) as DoorManager;
+			if (doorManager) doorManager.OpenDoor();
+			else Debug.Log("door manager is null");
+
+		}
+
+		if (collision.gameObject.tag == "WinDoor"){
+			Debug.Log("Win");
+			WinCondition winCondition = GameObject.FindObjectOfType(typeof(WinCondition)) as WinCondition;
+			winCondition.Win();
+		}
 	}
 
 	Color ColorClamp(Color color){
