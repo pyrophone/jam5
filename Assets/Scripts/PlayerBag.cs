@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerBag : MonoBehaviour {
-
+    public GameObject winText;
     public int holdAmount;
     [SerializeField] private GameObject _playerDataUI;
 
@@ -50,7 +50,8 @@ public class PlayerBag : MonoBehaviour {
     }
 
     public void SetWin(){
-        GameObject.Find("Win").GetComponent<Text>().text = name + "\nWins";
+        //GameObject.Find("Win").GetComponent<Text>().text = name + "\nWins";
+        winText.GetComponent<Text>().text = name + "\nWins";
     }
 
 }

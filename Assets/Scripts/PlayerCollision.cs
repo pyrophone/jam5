@@ -20,15 +20,7 @@ public class PlayerCollision : MonoBehaviour {
 			}	
 		}
 
-		if (collision.gameObject.tag == "FinalButton"){
-			Debug.Log("Hit final button");
-			//GameObject.FindObjectOfType(typeof(ScriptA)) as ScriptA
-			//DoorManager doorManager = gameObject.GetComponent<DoorManager>();
-			DoorManager doorManager = GameObject.FindObjectOfType(typeof(DoorManager)) as DoorManager;
-			if (doorManager) doorManager.OpenDoor();
-			else Debug.Log("door manager is null");
-
-		}
+		
 
 		if (collision.gameObject.tag == "WinDoor"){
 			Debug.Log("Win");
@@ -37,7 +29,20 @@ public class PlayerCollision : MonoBehaviour {
 		}
 	}
 
-	Color ColorClamp(Color color){
+    private void OnCollisionStay(Collision collision) {
+        if (collision.gameObject.tag == "FinalButton")
+        {
+            Debug.Log("Hit final button");
+            //GameObject.FindObjectOfType(typeof(ScriptA)) as ScriptA
+            //DoorManager doorManager = gameObject.GetComponent<DoorManager>();
+            DoorManager doorManager = GameObject.FindObjectOfType(typeof(DoorManager)) as DoorManager;
+            if (doorManager) doorManager.OpenDoor();
+            else Debug.Log("door manager is null");
+
+        }
+    }
+
+    Color ColorClamp(Color color){
 		for (int i = 0; i < 4; i++)
 			if(color[i] > 1) color[i] = 1;
 
