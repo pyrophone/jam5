@@ -10,7 +10,7 @@ public class Barrier : MonoBehaviour
 	void Start()
 	{
 		mat = GetComponent<Renderer>().sharedMaterial;
-		Physics.IgnoreLayerCollision(9, 9);
+		Physics.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
 	}
 
 	// Update is called once per frame
@@ -22,6 +22,6 @@ public class Barrier : MonoBehaviour
 	void OnCollisionEnter(Collision collision)
 	{
 		if(collision.gameObject.GetComponent<LineRenderer>().sharedMaterial == mat)
-			collision.gameObject.layer = 9;
+			collision.gameObject.layer = gameObject.layer;
 	}
 }

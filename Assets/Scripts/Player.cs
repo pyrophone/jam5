@@ -12,29 +12,37 @@ public class Player : MonoBehaviour {
 	[SerializeField]
 	KeyCode moveLeft;
 
+	Rigidbody rb;
+	Vector3 moveDir;
+
 	float speed = 10.0f;
 
 	// Use this for initialization
 	void Start () {
-
+		rb = GetComponent<Rigidbody>();
 	}
 
 	// Update is called once per frame
 	void Update () {
+		rb.velocity = Vector3.zero;
+		moveDir = Vector3.zero;
+
 		if(Input.GetKey(moveForward)) {
-			transform.position += transform.forward * Time.deltaTime * speed;
+			moveDir += Vector3.forward * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveBack)) {
-			transform.position -= transform.forward * Time.deltaTime * speed;
+			moveDir -= Vector3.forward * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveRight)) {
-			transform.position += transform.right * Time.deltaTime * speed;
+			moveDir += Vector3.right * Time.deltaTime * speed;
 		}
 
 		if(Input.GetKey(moveLeft)) {
-			transform.position -= transform.right * Time.deltaTime * speed;
+			moveDir -= Vector3.right * Time.deltaTime * speed;
 		}
+
+		rb.MovePosition(transform.position + moveDir);
 	}
 }
